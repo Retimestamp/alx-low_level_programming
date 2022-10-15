@@ -15,4 +15,5 @@ int main(void)
 	for (; i <= 'f'; i++)
 		putchar(i);
 	putchar(10);
+	return (0);
 }

@@ -22,8 +22,11 @@ int main(void)
 					putchar(k);
 					putchar(j);
 					putchar(i);
-					putchar(44);
-					putchar(' ');
+					if (k != '7' || j != '8' || i != '9')
+					{
+						putchar(44);
+						putchar(' ');
+					}
 				}
 			}
 			i = j + 1;
@@ -32,4 +35,5 @@ int main(void)
 		i = j + 1;
 	}
 	putchar(10);
+	return (0);
 }

@@ -28,7 +28,7 @@ int main(void)
 						putchar(j);
 						putchar(i);
 					}
-					if (l != '9' || k != '8' || j != '9' || i != '9')
+					if ((l != '9' || k != '8' || j != '9' || i != '9') && (l != j || i != k))
 					{
 						putchar(44);
 						putchar(' ');
@@ -42,4 +42,5 @@ int main(void)
 		k = 48;
 	}
 	putchar(10);
+	return (0);
 }

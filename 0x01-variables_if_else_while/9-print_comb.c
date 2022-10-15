@@ -10,7 +10,7 @@ int main(void)
 	int i = 48;
 
 	while (i < 58)
-{
+	{
 		putchar(i);
 		if (i != 57)
 		{
@@ -18,6 +18,7 @@ int main(void)
 			putchar(' ');
 		}
 		i++;
-}
+	}
 	putchar(10);
+	return (0);
 }

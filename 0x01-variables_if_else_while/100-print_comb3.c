@@ -18,11 +18,15 @@ int main(void)
 			{
 				putchar(j);
 				putchar(i);
-				putchar(44);
-				putchar(' ');
+				if (j != '8' || i != '9')
+				{
+					putchar(44);
+					putchar(' ');
+				}
 			}
 		}
 		i = j + 1;
 	}
 	putchar(10);
+	return (0);
 }
