@@ -1,16 +1,16 @@
 #include "main.h"
 
 /**
-* leet - encodes a string into 1337
+* rot13 - encodes a string into 1337
 * @c: string input
 * Return: character pointer
 */
 
-char *leet(char *c)
+char *rot13(char *c)
 {
 	int i, j;
-	char s1[] = "aAeEoOtTlL";
-	char s2[] = "4433007711";
+	char s1[] = "aAbBcCdDeEfFgGhHiIjJkKlLmMnNoOpPqQrRsStTuUvVxXwWyYzZ";
+	char s2[] = "nNoOpPqQrRsStTuUvVwWxXyYzZaAbBcCdDeEfFgGhHiIjJkKlLmM";
 
 	for (i = 0; *(c + i); i++)
 	{
