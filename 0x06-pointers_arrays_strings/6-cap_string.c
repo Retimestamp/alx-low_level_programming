@@ -8,18 +8,22 @@
 
 char *cap_string(char *c)
 {
-	int i, w = 0, p, j;
-	char str[] = " \t\n,;.!?\"(){}";
+	int i, w = 1, p, j;
+	char str[] = " \t\n,;.!?(){}";
 
 	for (i = 0; *(c + i); i++)
 	{
 		p = *(c + i);
 		for (j = 0; *(str + j); j++)
 		{
-			if (p == *(str + j))
+			if (p == *(str + j) || p == 34 || p == 32)
 			{
 				j = -1;
 				break;
+			}
+			else if (p < 97 || p > 123)
+			{
+				w = 0;
 			}
 		}
 		if (j == -1)
